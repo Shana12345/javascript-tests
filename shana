@@ -1,0 +1,69 @@
+// flattening array 
+
+var data= [[1, 2,3], [1, 2, 3], [4, 5, 1], [2], [2]];
+// [1, 1, 1, 2, 2, 2, 2, 3, 4, 5];
+
+var flatten = function(describe) {
+    var flatMap = [];
+    describe.forEach(function(value) {
+        if(Array.isArray(value))
+        flatMap = flatMap.concat(flatten(value))
+    }
+    else {
+        flatMap.push(value)
+    }
+});
+console.log(flatMap)
+return flatMap;
+
+}
+
+
+var result = flatten(data)
+
+    console.log(result);
+  });
+});
+
+
+// Clone Object
+
+"use strict";
+
+const details  = {
+    name: 'Ahmed',
+    age: 27,
+    skills: ['cycling', 'walking', 'eating']
+    
+};
+
+const another = objects.assign({}, details);
+const another = {...details};
+
+console.log(another);
+
+// scoping 
+var mod = new module
+function callback() {
+    var mod = new module 2;
+    console.log(new module);
+}
+
+function foo(){
+    var mod = prototype;
+    console.log(mod);
+}
+
+function bar(){
+    var mod = prototype.req(){
+    console.log(mod);
+
+foo();
+bar();
+console.log(mod);
+
+  });
+});
+
+
+
